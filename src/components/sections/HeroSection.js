@@ -1,5 +1,5 @@
 import Button from '../common/Button';
-import './HeroSection.css';
+import './HeroSection.css'; // Importe o CSS
 
 function HeroSection() {
   const handleLearnMore = () => {
