@@ -1,12 +1,11 @@
 .hero-section {
   background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
-  padding: 140px 32px 80px 32px;
-  text-align: center;
+  min-height: 100vh;
+  padding: 120px 32px 60px 32px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -15,67 +14,82 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  text-align: center;
 }
 
 .hero-badge {
   background-color: rgba(255, 255, 255, 0.1);
-  color: white;
   padding: 8px 16px;
   border-radius: 999px;
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .hero-title {
   font-size: 48px;
   font-weight: bold;
   line-height: 1.2;
+  margin-bottom: 16px;
 }
 
 .hero-title .highlight {
-  color: #a7f3d0; /* Um tom de verde claro para o destaque */
+  color: #a7f3d0;
 }
 
 .hero-subtitle {
   font-size: 20px;
   max-width: 600px;
   opacity: 0.9;
+  margin-bottom: 32px;
 }
 
 .hero-buttons {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
+  margin-bottom: 60px;
 }
 
 .hero-stats {
   display: flex;
   gap: 32px;
-  margin-top: 48px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch; /* Mantém os cards com a mesma altura */
+  width: 100%;
 }
+
+/* ===== INÍCIO DAS MUDANÇAS IMPORTANTES ===== */
 
 .stat-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 24px;
   border-radius: 12px;
-  width: 180px;
+  width: 210px; /* Aumentei um pouco a largura */
   border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  /* Alinha o conteúdo (ícone, etc) ao topo e centraliza horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  text-align: center; /* Garante que o texto que quebra linha fique centralizado */
 }
 
 .stat-icon {
   font-size: 24px;
+  margin-bottom: 24px; /* Aumentei o espaço abaixo do ícone */
 }
 
 .stat-number {
   font-size: 36px;
   font-weight: bold;
-  margin: 8px 0;
+  line-height: 1.2; 
+  margin-bottom: 8px;
 }
 
 .stat-label {
   font-size: 16px;
   opacity: 0.8;
 }
+
