@@ -1,9 +1,7 @@
 import React from 'react';
 import './HowItWorksSection.css';
-// 1. Importe os ícones que você quer usar
 import { FaUserPlus, FaTasks, FaSatelliteDish, FaUsers, FaCertificate } from 'react-icons/fa';
 
-// 2. Substitua a string do 'icon' pelo componente do ícone (sem aspas)
 const stepsData = [
   {
     icon: <FaUserPlus />,
@@ -51,8 +49,7 @@ function HowItWorksSection() {
             <div key={index} className="step-item">
               <div className="step-icon-wrapper">
                 <div className={`step-icon icon-${step.color}`}>
-                  {/* 3. Renderize a propriedade 'icon' diretamente */}
-                  {step.icon} 
+                  {step.icon}
                 </div>
                 <div className="step-number-badge">{index + 1}</div>
               </div>

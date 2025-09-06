@@ -1,9 +1,7 @@
 import React from 'react';
 import './ComparisonSection.css';
-// Importando os ícones de check e X
 import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 
-// Array com os dados da tabela para manter o código limpo
 const comparisonData = [
   {
     feature: 'Transferibilidade',

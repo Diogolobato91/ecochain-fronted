@@ -1,6 +1,5 @@
 import React from 'react';
 import './TechnologySection.css';
-// Importando os ícones que vamos usar
 import { FaBolt, FaFileContract, FaShieldAlt, FaCheckCircle } from 'react-icons/fa';
 
 const techData = [
