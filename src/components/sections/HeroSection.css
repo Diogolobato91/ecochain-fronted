@@ -55,30 +55,32 @@
   gap: 32px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch; /* Mantém os cards com a mesma altura */
+  align-items: stretch;
   width: 100%;
 }
-
-/* ===== INÍCIO DAS MUDANÇAS IMPORTANTES ===== */
 
 .stat-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 24px;
   border-radius: 12px;
-  width: 210px; /* Aumentei um pouco a largura */
+  width: 210px; 
   border: 1px solid rgba(255, 255, 255, 0.1);
-  
-  /* Alinha o conteúdo (ícone, etc) ao topo e centraliza horizontalmente */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; 
-  text-align: center; /* Garante que o texto que quebra linha fique centralizado */
+  text-align: center;
 }
 
 .stat-icon {
-  font-size: 24px;
-  margin-bottom: 24px; /* Aumentei o espaço abaixo do ícone */
+  font-size: 36px; /* Tamanho do ícone */
+  margin-bottom: 16px; /* Espaço abaixo do ícone */
+  color: #a7f3d0; /* Uma cor verde clara para os ícones */
+  display: flex; /* Garante que o ícone esteja centralizado */
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Garante um tamanho de área para o ícone */
+  height: 50px;
 }
 
 .stat-number {
@@ -93,3 +95,15 @@
   opacity: 0.8;
 }
 
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+}

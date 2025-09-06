@@ -59,6 +59,7 @@ function Header() {
           <a href="#home">Início</a>
           <a href="#about">Sobre</a>
           <a href="#how-it-works">Como Funciona</a>
+          <a href="#technology">Tecnologia</a>
           <a href="#contact">Contato</a>
         </div>
       )}
