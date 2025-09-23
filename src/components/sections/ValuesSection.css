@@ -18,27 +18,27 @@
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 4 colunas em telas grandes, mas se adapta */
-  gap: 32px; /* Espaço entre os cards */
-  justify-items: center; /* Centraliza os cards na grade */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  justify-items: center;
 }
 
 .value-card {
   background-color: #ffffff;
   padding: 32px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%; /* Ocupa a largura disponível da coluna */
-  max-width: 300px; /* Limita a largura máxima do card */
-  transition: transform 0.3s ease; /* Efeito hover suave */
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
 }
 
 .value-card:hover {
-  transform: translateY(-8px); /* Levanta o card no hover */
+  transform: translateY(-8px);
 }
 
 .value-icon-wrapper {
@@ -49,11 +49,15 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 24px;
-  color: white; /* Cor do ícone */
-  font-size: 32px; /* Tamanho do ícone */
 }
 
-/* Cores dos ícones baseadas no design */
+/* Regra mais específica para garantir que o ícone (SVG) seja branco */
+.value-icon-wrapper svg {
+  color: white;
+  font-size: 32px;
+}
+
+/* Cores de fundo */
 .icon-green { background-color: #22c55e; }
 .icon-blue { background-color: #3b82f6; }
 .icon-purple { background-color: #8b5cf6; }

@@ -21,6 +21,7 @@ function Footer() {
           <a href="#home" className="footer-link">Início</a>
           <a href="#about" className="footer-link">Sobre</a>
           <a href="#how-it-works" className="footer-link">Como Funciona</a>
+           <a href="#partners" className="footer-link">Parcerias</a>
           <a href="#contact" className="footer-link">Contato</a>
         </div>
 

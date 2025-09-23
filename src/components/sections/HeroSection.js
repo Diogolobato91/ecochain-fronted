@@ -1,6 +1,6 @@
 import Button from '../common/Button';
 import './HeroSection.css';
-import { FaShieldAlt, FaBolt, FaGlobeAmericas } from 'react-icons/fa';
+import { FaShieldAlt, FaBolt, FaGlobeAmericas } from 'react-icons/fa'; 
 
 function HeroSection() {
   const handleLearnMore = () => {
@@ -12,7 +12,6 @@ function HeroSection() {
   };
 
   return (
-    // A única alteração é aqui nesta linha: adicionamos o id="home"
     <section id="home" className="hero-section">
       <div className="hero-content">
         <div className="hero-badge">
@@ -47,11 +46,15 @@ function HeroSection() {
             <div className="stat-number">95%</div>
             <div className="stat-label">Economia de Energia</div>
           </div>
+          {/* ===== A CORREÇÃO ESTÁ AQUI ===== */}
           <div className="stat-card">
             <div className="stat-icon"><FaGlobeAmericas /></div>
-            <div className="stat-number">24/7</div>
-            <div className="stat-label">Verificação Contínua</div>
+            <div className="stat-number">24 / 7</div> {/* Título curto e direto */}
+            <div className="stat-label">
+              Verificação contínua <br /> 24 horas por dia
+            </div> 
           </div>
+          {/* ===== FIM DA CORREÇÃO ===== */}
         </div>
       </div>
     </section>

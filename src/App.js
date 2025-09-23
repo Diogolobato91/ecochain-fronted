@@ -7,6 +7,8 @@ import ValuesSection from './components/sections/ValuesSection';
 import TechnologySection from './components/sections/TechnologySection';
 import ComparisonSection from './components/sections/ComparisonSection'; 
 import Footer from './components/layout/Footer';
+import BenefitsSection from './components/sections/BenefitsSection';
+import PartnersSection from './components/sections/PartnersSection';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         <ValuesSection />
         <HowItWorksSection />
         <TechnologySection />
-        <ComparisonSection /> {/* 2. ADICIONE AQUI */}
+        <ComparisonSection />
+        <BenefitsSection /> 
+        <PartnersSection />
       </main>
       <Footer />
     </div>

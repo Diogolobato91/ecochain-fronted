@@ -40,9 +40,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 24px;
+}
+/* AQUI ESTÁ A CORREÇÃO: Aplicando a cor diretamente no ícone SVG */
+.tech-icon-wrapper svg {
   color: white;
   font-size: 28px;
-  margin-bottom: 24px;
 }
 
 /* Cores dos ícones */

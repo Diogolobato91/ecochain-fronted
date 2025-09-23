@@ -1,38 +1,13 @@
-import React from 'react';
+﻿import React from 'react';
 import './HowItWorksSection.css';
 import { FaUserPlus, FaTasks, FaSatelliteDish, FaUsers, FaCertificate } from 'react-icons/fa';
 
 const stepsData = [
-  {
-    icon: <FaUserPlus />,
-    title: 'Cadastro',
-    description: 'Produtores, empresas e auditores se cadastram na plataforma.',
-    color: 'blue'
-  },
-  {
-    icon: <FaTasks />,
-    title: 'Autoavaliação ESG',
-    description: 'Autoavaliação de critérios ambientais, sociais e de governança.',
-    color: 'green'
-  },
-  {
-    icon: <FaSatelliteDish />,
-    title: 'Verificação por Satélite',
-    description: 'Verificação automatizada por dados de satélite (INPE + MapBiomas).',
-    color: 'purple'
-  },
-  {
-    icon: <FaUsers />,
-    title: 'Auditoria Social',
-    description: 'Auditoria independente de aspectos sociais e de governança.',
-    color: 'orange'
-  },
-  {
-    icon: <FaCertificate />,
-    title: 'Certificado Digital',
-    description: 'Emissão de certificado digital como Soul-Bound Token (SBT).',
-    color: 'teal'
-  }
+  { icon: <FaUserPlus />, title: 'Cadastro', description: 'Produtores, empresas e auditores se cadastram na plataforma.', color: 'blue' },
+  { icon: <FaTasks />, title: 'Autoavaliação ESG', description: 'Autoavaliação de critérios ambientais, sociais e de governança.', color: 'green' },
+  { icon: <FaSatelliteDish />, title: 'Verificação por Satélite', description: 'Verificação automatizada por dados de satélite (INPE + MapBiomas).', color: 'purple' },
+  { icon: <FaUsers />, title: 'Auditoria Social', description: 'Auditoria independente de aspectos sociais e de governança.', color: 'orange' },
+  { icon: <FaCertificate />, title: 'Certificado Digital', description: 'Emissão de certificado digital como Soul-Bound Token (SBT).', color: 'teal' }
 ];
 
 function HowItWorksSection() {
@@ -43,7 +18,6 @@ function HowItWorksSection() {
         <p className="section-subtitle">
           Um processo transparente e tecnologicamente avançado para certificação sustentável
         </p>
-        
         <div className="timeline-container">
           {stepsData.map((step, index) => (
             <div key={index} className="step-item">

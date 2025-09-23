@@ -26,14 +26,15 @@ function Header() {
           <span className="logo-text">EcoChain</span>
         </div>
 
-        {/* Menu Desktop */}
         <nav className="desktop-nav">
           <a href="#home">Início</a>
           <a href="#about">Sobre</a>
           <a href="#how-it-works">Como Funciona</a>
           <a href="#technology">Tecnologia</a>
+          <a href="#benefits">Benefícios</a>
+          <a href="#partners">Parcerias</a>
           <a href="#contact">Contato</a>
-        </nav>
+</nav>
 
         {/* Botões do Header */}
         <div className="header-buttons">
@@ -53,16 +54,17 @@ function Header() {
         </button>
       </div>
 
-      {/* Menu Mobile */}
       {isMenuOpen && (
         <div className="mobile-menu">
           <a href="#home">Início</a>
           <a href="#about">Sobre</a>
           <a href="#how-it-works">Como Funciona</a>
           <a href="#technology">Tecnologia</a>
+          <a href="#benefits">Benefícios</a>
+          <a href="#partners">Parcerias</a>
           <a href="#contact">Contato</a>
         </div>
-      )}
+)}
     </header>
   );
 }
