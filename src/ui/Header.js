@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import Button from '../ui/Button';
+import { Link } from 'react-router-dom'; // Importe o Link
+import Button from './Button';
 import '../style/Header.css';
 
 function Header() {
@@ -9,41 +10,36 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleLogin = () => {
-    alert('Login clicado!');
-  };
-
-  const handleSignUp = () => {
-    alert('Cadastro clicado!');
-  };
-
   return (
     <header className="header">
       <div className="header-content">
-        {/* Logo */}
-        <div className="logo">
-          <div className="logo-icon">E</div>
-          <span className="logo-text">EcoChain</span>
-        </div>
+        {/* Logo agora é um link para a página inicial */}
+        <Link to="/" className="logo-link">
+          <div className="logo">
+            <div className="logo-icon">E</div>
+            <span className="logo-text">EcoChain</span>
+          </div>
+        </Link>
 
+        {/* Menu Desktop */}
         <nav className="desktop-nav">
-          <a href="#home">Início</a>
-          <a href="#about">Sobre</a>
-          <a href="#how-it-works">Como Funciona</a>
-          <a href="#technology">Tecnologia</a>
-          <a href="#benefits">Benefícios</a>
-          <a href="#partners">Parcerias</a>
-          <a href="#contact">Contato</a>
-</nav>
+          <a href="/#home">Início</a>
+          <a href="/#about">Sobre</a>
+          <a href="/#how-it-works">Como Funciona</a>
+          <a href="/#benefits">Benefícios</a>
+          <a href="/#partners">Parcerias</a>
+          {/* O link de Contato ainda não tem uma seção, vamos remover por agora */}
+          {/* <a href="/#contact">Contato</a> */}
+        </nav>
 
-        {/* Botões do Header */}
+        {/* Botões do Header agora usam Link */}
         <div className="header-buttons">
-          <Button type="outline" size="small" onClick={handleLogin}>
-            Entrar
-          </Button>
-          <Button size="small" onClick={handleSignUp}>
-            Cadastrar
-          </Button>
+          <Link to="/login">
+            <Button type="outline" size="small">Entrar</Button>
+          </Link>
+          <Link to="/cadastro">
+            <Button size="small">Cadastrar</Button>
+          </Link>
         </div>
 
         {/* Botão Menu Mobile */}
@@ -54,17 +50,17 @@ function Header() {
         </button>
       </div>
 
+      {/* Menu Mobile */}
       {isMenuOpen && (
         <div className="mobile-menu">
-          <a href="#home">Início</a>
-          <a href="#about">Sobre</a>
-          <a href="#how-it-works">Como Funciona</a>
-          <a href="#technology">Tecnologia</a>
-          <a href="#benefits">Benefícios</a>
-          <a href="#partners">Parcerias</a>
-          <a href="#contact">Contato</a>
+          <a href="/#home">Início</a>
+          <a href="/#about">Sobre</a>
+          <a href="/#how-it-works">Como Funciona</a>
+          <a href="/#benefits">Benefícios</a>
+          <a href="/#partners">Parcerias</a>
+          {/* <a href="/#contact">Contato</a> */}
         </div>
-)}
+      )}
     </header>
   );
 }

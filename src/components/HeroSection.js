@@ -54,7 +54,6 @@ function HeroSection() {
               Verificação contínua <br /> 24 horas por dia
             </div> 
           </div>
-          {/* ===== FIM DA CORREÇÃO ===== */}
         </div>
       </div>
     </section>
