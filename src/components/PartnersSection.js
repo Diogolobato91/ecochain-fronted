@@ -1,5 +1,5 @@
 import React from 'react';
-import './PartnersSection.css';
+import '../style/PartnersSection.css';
 // Importando ícones relevantes para parcerias
 import { FaUniversity, FaHandsHelping, FaSeedling, FaFlask } from 'react-icons/fa';
 

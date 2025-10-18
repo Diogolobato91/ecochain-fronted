@@ -1,5 +1,5 @@
 import React from 'react';
-import './ValuesSection.css';
+import '../style/ValuesSection.css';
 import { FaAward, FaLeaf, FaLightbulb, FaUsers } from 'react-icons/fa';
 
 function ValuesSection() {

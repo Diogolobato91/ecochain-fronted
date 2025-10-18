@@ -1,5 +1,5 @@
-import Button from '../common/Button';
-import './HeroSection.css';
+import Button from '../ui/Button';
+import '../style/HeroSection.css';
 import { FaShieldAlt, FaBolt, FaGlobeAmericas } from 'react-icons/fa'; 
 
 function HeroSection() {

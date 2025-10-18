@@ -1,5 +1,5 @@
 import React from 'react';
-import './TechnologySection.css';
+import '../style/TechnologySection.css';
 import { FaBolt, FaFileContract, FaShieldAlt, FaCheckCircle } from 'react-icons/fa';
 
 const techData = [

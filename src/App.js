@@ -1,14 +1,14 @@
 import './App.css';
-import Header from './components/layout/Header';
-import HeroSection from './components/sections/HeroSection';
-import AboutSection from './components/sections/AboutSection';
-import HowItWorksSection from './components/sections/HowItWorksSection';
-import ValuesSection from './components/sections/ValuesSection';
-import TechnologySection from './components/sections/TechnologySection';
-import ComparisonSection from './components/sections/ComparisonSection'; 
-import Footer from './components/layout/Footer';
-import BenefitsSection from './components/sections/BenefitsSection';
-import PartnersSection from './components/sections/PartnersSection';
+import Header from './ui/Header';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import HowItWorksSection from './components/HowItWorksSection';
+import ValuesSection from './components/ValuesSection';
+import TechnologySection from './components/TechnologySection';
+import ComparisonSection from './components/ComparisonSection'; 
+import Footer from './ui/Footer';
+import BenefitsSection from './components/BenefitsSection';
+import PartnersSection from './components/PartnersSection';
 
 function App() {
   return (

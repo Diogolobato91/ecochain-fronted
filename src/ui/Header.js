@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Button from '../common/Button';
-import './Header.css';
+import Button from '../ui/Button';
+import '../style/Header.css';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

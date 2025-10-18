@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import './HowItWorksSection.css';
+import '../style/HowItWorksSection.css';
 import { FaUserPlus, FaTasks, FaSatelliteDish, FaUsers, FaCertificate } from 'react-icons/fa';
 
 const stepsData = [

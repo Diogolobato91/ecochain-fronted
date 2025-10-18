@@ -1,5 +1,5 @@
 import React from 'react';
-import './BenefitsSection.css';
+import '../style/BenefitsSection.css';
 // Importando os ícones que vamos usar
 import { FaShieldAlt, FaChartLine, FaRecycle, FaUsers } from 'react-icons/fa';
 

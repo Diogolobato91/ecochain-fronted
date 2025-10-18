@@ -1,7 +1,7 @@
 import React from 'react';
-import './AboutSection.css';
-import Button from '../common/Button';
-import aboutImage from '../../assets/amazonia.jpg'; 
+import '../style/AboutSection.css';
+import Button from '../ui/Button';
+import aboutImage from '../assets/amazonia.jpg';
 
 function AboutSection() {
   const handleKnowMore = () => {

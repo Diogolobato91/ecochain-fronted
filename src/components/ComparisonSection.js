@@ -1,5 +1,5 @@
 import React from 'react';
-import './ComparisonSection.css';
+import '../style/ComparisonSection.css';
 import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 
 const comparisonData = [
