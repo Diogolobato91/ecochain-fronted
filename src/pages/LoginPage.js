@@ -1,12 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Componente para links de navegação
-import '../style/AuthForm.css'; // Um CSS que vamos criar para os formulários
+// 1. Importe 'useNavigate' junto com o 'Link'
+import { Link, useNavigate } from 'react-router-dom';
+import '../style/AuthForm.css';
 import Button from '../ui/Button';
 
 function LoginPage() {
+  // 2. Inicialize o hook para podermos usá-lo
+  const navigate = useNavigate();
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert('Tentativa de login!');
+    alert('Login simulado com sucesso! Redirecionando...');
+    
+    // 3. Substitua o alerta antigo por esta linha que redireciona o usuário
+    navigate('/dashboard'); 
   };
 
   return (

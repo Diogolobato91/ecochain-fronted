@@ -2,11 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-// Layout
-import Header from './ui/Header';
-import Footer from './ui/Footer';
-
-// Seções da Página Inicial
+// Componentes da Página Inicial (agora em /src/components/)
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ValuesSection from './components/ValuesSection';
@@ -16,11 +12,19 @@ import ComparisonSection from './components/ComparisonSection';
 import BenefitsSection from './components/BenefitsSection';
 import PartnersSection from './components/PartnersSection';
 
-// Novas Páginas
+// Componentes de UI (agora em /src/components/)
+import Header from './ui/Header';
+import Footer from './ui/Footer';
+
+// Páginas
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import DashboardPage from './pages/DashboardPage';
+import DashboardHomePage from './pages/DashboardHomePage';
+import DashboardProfilePage from './pages/DashboardProfilePage';
 
-// Componente que agrupa as seções da página inicial
+
+// Componente que junta as seções da Página Inicial
 function HomePage() {
   return (
     <>
@@ -36,28 +40,31 @@ function HomePage() {
   );
 }
 
-// Componente principal que gerencia as rotas
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Routes>
-          {/* Rotas para Login e Cadastro (não mostram Header nem Footer) */}
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/cadastro" element={<RegisterPage />} />
+      <Routes>
+        {/* Rota da Página Inicial (renderiza com Header e Footer) */}
+        <Route path="/" element={
+          <>
+            <Header />
+            <main><HomePage /></main>
+            <Footer />
+          </>
+        } />
 
-          {/* Rota principal que mostra a Página Inicial completa */}
-          <Route path="/*" element={
-            <>
-              <Header />
-              <main>
-                <HomePage />
-              </main>
-              <Footer />
-            </>
-          } />
-        </Routes>
-      </div>
+        {/* Rotas de Autenticação (sem Header e Footer) */}
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cadastro" element={<RegisterPage />} />
+
+        {/* Rota do Dashboard (usa DashboardPage como layout) */}
+        <Route path="/dashboard" element={<DashboardPage />}>
+          {/* Sub-rotas que serão renderizadas dentro do <Outlet> */}
+          <Route index element={<DashboardHomePage />} />
+          <Route path="perfil" element={<DashboardProfilePage />} />
+          {/* <Route path="configuracoes" element={<... />} /> */}
+        </Route>
+      </Routes>
     </Router>
   );
 }

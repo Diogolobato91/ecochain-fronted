@@ -1,12 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// 1. Importe 'useNavigate' junto com o 'Link'
+import { Link, useNavigate } from 'react-router-dom';
 import '../style/AuthForm.css';
 import Button from '../ui/Button';
 
 function RegisterPage() {
+  // 2. Inicialize o hook para podermos usá-lo
+  const navigate = useNavigate();
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert('Tentativa de cadastro!');
+    alert('Cadastro simulado com sucesso! Redirecionando...');
+    
+    // 3. Adicione esta linha para redirecionar o usuário para o dashboard
+    navigate('/dashboard'); 
   };
 
   return (
